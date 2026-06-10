@@ -17,7 +17,7 @@ Training script requires following input files
 -X_test.npy
 
 The input data here used was the timeseries data of 45 cemter-of-mass(COM) pairwise distances between all the NDBA molecules.
-The total data was divided in training data set (80%) and testing data set(20%) to train the Autoencoder architecture.
+The total data was divided in training data set(80%) and testing data set(20%) to train the Autoencoder architecture.
 
 Output files:
 The training script generated the following files:
