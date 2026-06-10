@@ -1,0 +1,31 @@
+Dense Autoencoder for NDBA COM pair distance dimensionality reduction
+
+# Owner: Akta Singh
+
+Requirements:
+A conda environment with the following packages installed:
+-Python 3.10+ 
+-PyTorch 
+-Numpy 
+
+Running the code: 
+python train_dae.py
+
+Input files: 
+Training script requires following input files 
+-X_train.npy 
+-X_test.npy
+
+The input data here used was the timeseries data of 45 cemter-of-mass(COM) pairwise distances between all the NDBA molecules.
+The total data was divided in training data set (80%) and testing data set(20%) to train the Autoencoder architecture.
+
+Output files:
+The training script generated the following files:
+-weights.pth
+-parameters.pkl
+-training_loss.dat
+-validation_loss.dat
+
+Once the Autoencoder is trained, it can be used to reduce the dimensionality of similar NDBA COM pair-distance datasets (45-dimensional input data into a lower-dimensional latent representation).
+
+
